@@ -33,13 +33,14 @@ class Bird(Animal):
         
     def fly(self):
         print(f"{self.name} is flying")
-
+        
 class Fish(Animal):
     def __init__(self, name, age, habitat,):
         super().__init__(name, age, habitat)
         
     def swim(self):
         print(f"{self.name} is swimming")
+        
 
 # Create at least two instances of the Animal derived classes with different data.
 
@@ -53,3 +54,5 @@ Salmon = Fish("Salmon", "1", "River")
 print(Pigeon.fly())
 print(Pigeon.sleep())
 
+print(Salmon.swim())
+print(Salmon.sleep()) 
