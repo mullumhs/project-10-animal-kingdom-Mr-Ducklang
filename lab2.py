@@ -23,7 +23,7 @@ class Animal:
         return (f"{self.name} is sleeping")
     
     def display_info(self):
-        print(f"This {self.name} is a {self.age} yr old animal that lives in {self.habitat}")
+       return f"This {self.name} is a {self.age} yr old animal that lives in {self.habitat}"
 
 class Bird(Animal):
     def __init__(self, name, age, habitat, colour):
@@ -34,9 +34,7 @@ class Bird(Animal):
         print(f"{self.name} is flying")
         
     def display_info(self):
-        print(f"This {self.name} is a {self.colour}, {self.age} yr old bird that lives in {self.habitat}")
-        
-    
+        return f"This {self.name} is a {self.colour}, {self.age} yr old bird that lives in {self.habitat}"
         
 class Fish(Animal):
     def __init__(self, name, age, habitat, speed):
@@ -47,11 +45,10 @@ class Fish(Animal):
         print(f"{self.name} is swimming")
         
     def display_info(self):
-        print(f"This {self.name} is a {self.speed}, {self.age} yr old fish that lives in {self.habitat}")
+        return f"This {self.name} is a {self.speed}, {self.age} yr old fish that lives in {self.habitat}"
 
 Pigeon = Bird("Pigeon", "3", "New York", "Grey",)
 Duck = Bird("Duck", "4", "A Pond", "Grey and Green",)
-
 Salmon = Fish("Salmon", "1", "A River", "Fast")
 
 
