@@ -47,9 +47,9 @@ class Fish(Animal):
     def display_info(self):
         return f"This {self.name} is a {self.speed}, {self.age} yr old fish that lives in {self.habitat}"
 
-Pigeon = Bird("Pigeon", "3", "New York", "Grey",)
-Duck = Bird("Duck", "4", "A Pond", "Grey and Green",)
-Salmon = Fish("Salmon", "1", "A River", "Fast")
+#Pigeon = Bird("Pigeon", "3", "New York", "Grey",)
+#Duck = Bird("Duck", "4", "A Pond", "Grey and Green",)
+#Salmon = Fish("Salmon", "1", "A River", "Fast")
 
 
 # Each derived class should override at least one method from the Animal class.
@@ -58,9 +58,9 @@ Salmon = Fish("Salmon", "1", "A River", "Fast")
 # Create at least two instances of your derived classes
 # Call the overridden methods on the instances.
 
-zoo = [Pigeon, Duck, Salmon]
+#zoo = [Pigeon, Duck, Salmon]
 
-for Animal in zoo:
-    print(Animal.display_info())
+#for creature in zoo:
+    #print(Animal.display_info())
 
 
